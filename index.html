@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deryl Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2>Deryl</h2>
+        <p>Business Analytics</p>
+    </aside>
+
+    <main class="main">
+
+        <div class="header">
+            <h1>Financial Overview</h1>
+            <span id="date"></span>
+        </div>
+
+        <div class="top-grid">
+
+            <div class="metrics">
+                <div class="card revenue">
+                    <p>Total Revenue</p>
+                    <h2 id="totalRevenue">₹0</h2>
+                </div>
+
+                <div class="card expenses">
+                    <p>Total Expenses</p>
+                    <h2 id="totalExpenses">₹0</h2>
+                </div>
+
+                <div class="card profit">
+                    <p>Net Profit/Loss</p>
+                    <h2 id="netProfit">₹0</h2>
+                </div>
+            </div>
+
+            <div class="input-panel">
+                <h3>Add Financial Entry</h3>
+
+                <input type="number" id="revenueInput" placeholder="Revenue">
+                <input type="number" id="expenseInput" placeholder="Expenses">
+
+                <button onclick="addEntry()">Add Entry</button>
+            </div>
+
+        </div>
+
+        <div class="bottom-grid">
+
+            <div class="chart-box">
+                <canvas id="financeChart"></canvas>
+            </div>
+
+            <div class="history-box">
+                <h3>Entries</h3>
+                <ul id="historyList"></ul>
+            </div>
+
+        </div>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

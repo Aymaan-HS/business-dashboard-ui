@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+body{
+    background:#f6f7fb;
+    overflow:hidden;
+}
+
+.dashboard{
+    display:flex;
+    height:100vh;
+}
+
+.sidebar{
+    width:240px;
+    background:#111827;
+    color:white;
+    padding:40px 30px;
+}
+
+.sidebar h2{
+    font-size:28px;
+}
+
+.sidebar p{
+    margin-top:8px;
+    color:#9ca3af;
+}
+
+.main{
+    flex:1;
+    padding:30px;
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.header h1{
+    font-size:30px;
+    font-weight:700;
+}
+
+.top-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+    height:28%;
+}
+
+.metrics{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{
+    padding:25px;
+    border-radius:18px;
+    color:white;
+}
+
+.revenue{
+    background:#111827;
+}
+
+.expenses{
+    background:#dc2626;
+}
+
+.profit{
+    background:#2563eb;
+}
+
+.card p{
+    opacity:.8;
+}
+
+.card h2{
+    margin-top:12px;
+    font-size:32px;
+}
+
+.input-panel{
+    background:white;
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+}
+
+.input-panel h3{
+    margin-bottom:20px;
+}
+
+.input-panel input{
+    width:100%;
+    padding:14px;
+    margin-bottom:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+}
+
+.input-panel button{
+    width:100%;
+    padding:14px;
+    border:none;
+    background:#111827;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.bottom-grid{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:20px;
+    height:60%;
+}
+
+.chart-box{
+    background:white;
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+}
+
+.history-box{
+    background:white;
+    padding:20px;
+    border-radius:18px;
+    box-shadow:0 8px 30px rgba(0,0,0,.05);
+    overflow-y:auto;
+}
+
+.history-box ul{
+    list-style:none;
+    margin-top:15px;
+}
+
+.history-box li{
+    padding:12px;
+    border-bottom:1px solid #eee;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.delete-btn{
+    background:red;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    border-radius:8px;
+    cursor:pointer;
+}
